@@ -1,0 +1,14 @@
+.product__features-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.product__features-icon {
+    transition: all .2 ease-in-out;
+}
+
+.product__features-item:hover .product__features-icon {
+    color: var(--primary);
+    transform: scale(1.1);
+}

@@ -1,0 +1,10 @@
+.cart-product__back {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    border-radius: 0.8rem;
+    cursor: pointer;
+}

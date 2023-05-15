@@ -1,0 +1,41 @@
+.offer__products > div {
+    margin-bottom: 1rem;
+}
+.offer > div:last-child {
+    margin-bottom: none;
+}
+
+.offer__product {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offer__product-cover {
+    border: 0.1rem solid var(--gray-200);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}
+
+.offer__product-thumbnail {
+    max-width: 5rem;
+}
+
+.offer__product-title {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    line-height: 2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--dark);
+}
+
+.offer__product-price {
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    display: block;
+    color: var(--gray-500);
+}

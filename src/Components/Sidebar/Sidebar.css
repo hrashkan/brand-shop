@@ -1,0 +1,49 @@
+.sidebar {
+    position: relative;
+}
+
+.responsive-sidebar__button {
+    display: none;
+}
+
+.widget {
+    padding: 1rem 0;
+    border-top: 0.1rem solid var(--gray-400);
+    margin: 1rem 0;
+}
+
+.widget__title {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.widget__filters>div {
+    margin-bottom: .5rem;
+    color: var(--gray-600);
+}
+
+.widget__filters>div:last-child {
+    margin-bottom: 0;
+}
+
+.widget__item-input,
+.score-filter {
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.widget__item-title {
+    font-size: 1.5rem;
+    color: var(--gray-600);
+}
+
+.score-start__fill {
+    color: var(--orange);
+}
+
+.score-start__outline {
+    color: var(--gray-400);
+}
+
+/*price input*/
+

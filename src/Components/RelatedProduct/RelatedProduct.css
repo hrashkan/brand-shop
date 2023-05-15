@@ -1,0 +1,44 @@
+.related__product-thumbnail.related__product {
+    position: relative;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.related-product__cover {
+    overflow: hidden;
+}
+
+.related__product-thumbnail {
+    width: 80%;
+    min-height: 13rem;
+    cursor: zoom-in;
+}
+
+.related__product-title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+    text-shadow: none;
+    color: var(--gray-600);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 4rem;
+}
+
+.related__product-price {
+    color: var(--gray-500);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.related__product-button {
+    border: none;
+    background: var(--primary-gradient);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.8rem;
+    color: var(--white);
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.tab__title {
+    color: var(--gray-500);
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: all .2s ease-in-out;
+}
+
+.tab__title.active {
+    color: var(--primary);
+    font-family: var(--secondary-font);
+}
+
+.tab__title.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    bottom: -1.1rem;
+    left: 0;
+    background: var(--primary-gradient);
+}

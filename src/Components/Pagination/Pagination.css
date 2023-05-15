@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid var(--gray-400);
+    border-radius: .8rem;
+}
+
+.pagination-item {
+    border: .1rem solid var(--gray-400);
+    padding: .5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.pagination-item a{
+    color: var(--dark);
+    transition: all .2s ease-in-out;
+}
+
+.pagination-item.active{
+    background-color: var(--gray-400);
+    color: var(--primary);
+}

@@ -1,0 +1,18 @@
+.product-detail__table {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    border-bottom: .1rem solid var(--gray-200);
+}
+
+.product__detail-title {
+    color: var(--gray-500);
+}
+
+.product__detail-text {
+    color: var(--gray-600);
+    font-size: 1.4rem;
+}

@@ -1,0 +1,41 @@
+.add-to-cart {
+    font-size: 1.4rem;
+    border: none;
+    font-family: var(--secondary-font);
+    background: var(--primary-gradient);
+    padding: 0.1rem 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    cursor: pointer;
+    min-height: 2.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.grid-product-box:hover .add-to-cart,
+.offer-product-box:hover .add-to-cart,
+.recommended-product:hover .add-to-cart,
+.product-box:hover .add-to-cart {
+    bottom: 0;
+}
+
+.product-full .add-to-cart,
+.product-cart .add-to-cart {
+    position: relative;
+    bottom: 0;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid var(--primary-gradient);
+    font-size: 1.6rem;
+}
+
+.product-cart .add-to-cart {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+}

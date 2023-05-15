@@ -1,0 +1,25 @@
+.review__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-family: var(--secondary-font);
+}
+
+.review__user-badge{
+    color: var(--white);
+    background-color: var(--green);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    border-radius: 0.8rem;
+}
+
+.review__star{
+    color: #FF9017;
+}
+
+.review__text{
+    color: var(--gray-500);
+}

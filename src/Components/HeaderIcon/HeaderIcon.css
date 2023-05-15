@@ -1,0 +1,33 @@
+.header__icon-elm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--gray-600);
+    transition: color .2s ease-in-out;
+}
+
+.header__icon-elm:hover {
+    color: var(--primary);
+}
+
+.header__icon-badge {
+    position: absolute;
+    top: -2rem;
+    right: -0.1rem;
+    background-color: #D0FFD6;
+    color: var(--green);
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.header__icon-elm:hover .header__icon-badge {
+    background-color: var(--green);
+    color: var(--white);
+}

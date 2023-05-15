@@ -1,0 +1,25 @@
+.footer__copy-right {
+    padding: 1rem 0;
+    color: #606060;
+    background-color: var(--gray-200);
+}
+
+.text-mark {
+    background: transparent;
+    font-family: var(--secondary-font);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    animation: change-color .7s infinite linear;
+}
+
+@keyframes change-color {
+    25%{
+        color: var(--dark);
+    }
+    50%{
+        color: var(--primary);
+    }
+    100%{
+        color: var(--red);
+    }
+}

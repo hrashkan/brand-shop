@@ -1,0 +1,40 @@
+/*!*!*! Discount *!*!*/
+.discount {
+    background-color: var(--white);
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+}
+
+.discount__wrapper {
+    background: linear-gradient(90deg, #237cffd1 70%, #005ADE);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+
+
+.discount-body>.main-title,
+.discount-body>.main-title__desc {
+    color: var(--white);
+}
+
+
+
+
+.discount-link__button {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+}
+
+/*** sm ***/
+@media (max-width: 576px) {
+    .discount__wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

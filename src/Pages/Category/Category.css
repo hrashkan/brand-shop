@@ -1,0 +1,111 @@
+/*
+show type box
+*/
+
+.responsive-sidebar__icon {
+    display: none;
+}
+
+.detail-box {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark);
+}
+
+.detail-box__count b {
+    font-family: var(--secondary-font);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.detail-box__icons {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.detail-box__icons svg {
+    border: 0.1rem solid var(--gray-200);
+    padding: 0.5rem;
+    font-size: 3rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.detail-box__icons svg.active {
+    background-color: var(--gray-300);
+}
+
+
+.category-load-product__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    color: var(--green);
+}
+
+/*
+pagination
+*/
+.category-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*****
+media queries
+*****/
+
+/*** xxl ***/
+@media (max-width: 1400px) {}
+
+/*** xl ***/
+@media (max-width: 1200px) {}
+
+/*** lg ***/
+@media (max-width: 992px) {}
+
+/*** md ***/
+@media (max-width: 768px) {
+
+    /*sidebar*/
+    .responsive-sidebar,
+    .responsive-sidebar__button,
+    .responsive-sidebar__icon {
+        display: block;
+    }
+
+    .responsive-sidebar {
+        position: fixed;
+        z-index: 99;
+        background-color: var(--white);
+        top: 0;
+        left: -80%;
+        bottom: -4rem;
+        width: 75% !important;
+        overflow-y: scroll;
+        transition: all .2s ease-in-out;
+    }
+
+    .responsive-sidebar.active {
+        left: 0;
+    }
+
+    .responsive-sidebar__button {
+        margin: 1rem auto;
+        font-size: 2rem;
+        color: var(--gray-600);
+        cursor: pointer;
+    }
+}
+
+/*** sm ***/
+@media (max-width: 576px) {}

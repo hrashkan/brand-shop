@@ -1,0 +1,63 @@
+.services-box {
+    position: relative;
+    background-color: var(--white);
+    border-radius: .8rem;
+}
+
+.services-box__img {
+    position: relative;
+}
+
+.services-box__img svg {
+    position: absolute;
+    bottom: -1rem;
+    right: 15%;
+    background: #D1E7FF;
+    padding: 1rem;
+    font-size: 4rem;
+    border-radius: 50%;
+    color: var(--dark);
+    border: 0.1rem solid var(--white);
+}
+
+.services-box:hover .services-box__img svg {
+    animation: shake .2s linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-0.2rem);
+    }
+
+    50% {
+        transform: translateX(0.2rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.services-box__cover {
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.services-box__title {
+    color: var(--dark);
+    transition: color .2s ease-in-out;
+    min-height: 14.5rem;
+    display: block;
+}
+
+.services-box__title-text {
+    font-size: 1.6rem;
+    text-shadow: none;
+    padding: 2rem;
+    max-width: 70%;
+}
+
+.services-box:hover .services-box__title {
+    color: var(--primary);
+}

@@ -1,0 +1,6 @@
+.footer-title{
+    color: var(--dark);
+    font-family: var(--secondary-font);
+    text-shadow: none;
+    margin-bottom: 1rem;
+}

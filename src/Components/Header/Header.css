@@ -1,0 +1,269 @@
+/*
+top bar
+*/
+
+.header {
+    background-color: var(--white);
+    user-select: none;
+    position: relative;
+}
+
+.navbar__list,
+.header__ship {
+    display: flex;
+}
+
+.hamburger-menu {
+    width: 3.4rem;
+    height: 0.3rem;
+    background-color: var(--dark);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.hamburger-menu::after,
+.hamburger-menu::before {
+    content: "";
+    position: absolute;
+    background-color: var(--dark);
+    width: 100%;
+    height: .3rem;
+    display: none;
+}
+
+.hamburger-menu::after {
+    top: .8rem;
+}
+
+.hamburger-menu::before {
+    bottom: .8rem;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1rem solid #D9D9D9;
+    padding: 1.5rem 0;
+}
+
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*
+header main
+*/
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+/*
+header ship
+*/
+.header__ship {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ship-country {
+    position: relative;
+}
+
+.countries-btn {
+    cursor: pointer;
+}
+
+.countries__title {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.countries__content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.countries__content.active {
+    display: block;
+    opacity: 1;
+    box-shadow: 0 0.4rem 6rem 3px #00000026;
+    z-index: 20;
+}
+
+.countries__search {
+    position: relative;
+}
+
+.countries__search-box {
+    padding: .5rem 2rem;
+    border-radius: 0.8rem .8rem 0 0;
+    border: 0.1rem solid var(--primary);
+}
+
+.countries__search-box:focus {
+    outline: none;
+}
+
+.countries__search svg {
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-500);
+    font-size: 1.3rem;
+}
+
+.countries__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background-color: var(--white);
+    border-radius: 0 0 0.8rem 0.8rem;
+    max-height: 15rem;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    overflow-y: auto;
+}
+
+/*custom scrollbar */
+.countries__list::-webkit-scrollbar {
+    width: .5em;
+}
+
+.countries__list::-webkit-scrollbar-track {
+    box-shadow: inset 0 .4rem .4rem rgba(0, 0, 0, 0.1);
+}
+
+.countries__list::-webkit-scrollbar-thumb {
+    background-color: var(--gray-300);
+    border-radius: .8rem;
+}
+
+.countries__option {
+    width: 100%;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.countries__option.active,
+.countries__option:hover {
+    background-color: #E5F1FF;
+}
+
+/*
+Media Queries
+*/
+
+@media (max-width: 992px) {
+
+    /* header style */
+
+    .header__icon-elm.orders,
+    .header__icon-elm.message {
+        display: none;
+    }
+
+    .header__icon-badge {
+        right: -.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*header style*/
+    .hamburger-menu,
+    .hamburger-menu::after,
+    .hamburger-menu::before {
+        display: block;
+    }
+
+    .header {
+        border-bottom: .1rem solid #D9D9D9;
+    }
+
+    .header__top {
+        border-bottom: none;
+    }
+
+    .header__logo {
+        width: 60%;
+    }
+
+    .header__icon-title,
+    .navbar__list,
+    .header__ship {
+        display: none;
+    }
+
+    .header__search {
+        position: absolute;
+        top: calc(100% - 5rem);
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        padding: 2rem 0;
+    }
+
+    .header__search-box {
+        width: 52rem;
+    }
+
+    .header__search-form {
+        border: 0.2rem solid var(--gray-300);
+        background-color: var(--gray-100);
+        border-radius: .8rem;
+    }
+
+    .header__search-button {
+        display: none;
+    }
+
+    .header__icons {
+        font-size: 2rem;
+
+    }
+
+    .header__icon-badge {
+        right: -1rem;
+        width: 1.8rem;
+    }
+
+    /*responsive nav*/
+
+}
+
+@media (max-width: 576px) {
+
+    /*header style*/
+    .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__search-box {
+        max-width: 52rem;
+        margin: 0 1rem;
+
+    }
+
+}

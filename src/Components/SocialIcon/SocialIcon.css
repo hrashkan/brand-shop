@@ -1,0 +1,16 @@
+.social__icon {
+    background-color: var(--gray-400);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.social__icon:hover {
+    background: var(--primary-gradient);
+}

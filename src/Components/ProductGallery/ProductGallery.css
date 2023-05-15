@@ -1,0 +1,18 @@
+.product__gallery-item {
+    border: 0.1rem solid var(--gray-300);
+    border-radius: 0.8rem;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.product__gallery-item.active {
+    color: var(--gray-600);
+}
+
+.product__gallery-img {
+    max-width: 100%;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    object-position: center center;
+}

@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../src/Fonts/Inter-Regular.ttf")
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../src/Fonts/Inter-SemiBold.ttf")
+}
+
+:root {
+  --dark: rgba(28, 28, 28, 1);
+  --gray-600: rgba(80, 80, 80, 1);
+  --gray-500: rgba(139, 150, 165, 1);
+  --gray-400: rgba(189, 196, 205, 1);
+  --gray-300: rgba(222, 226, 231, 1);
+  --gray-200: rgba(239, 242, 244, 1);
+  --gray-100: rgba(247, 250, 252, 1);
+  --light: rgba(227, 240, 255, 1);
+  --primary: rgba(13, 110, 253, 1);
+  --light-blue: rgba(195, 255, 203, 1);
+  --green: rgba(0, 181, 23, 1);
+  --light-pink: rgba(255, 229, 191, 1);
+  --orange: rgba(255, 144, 23, 1);
+  --red: rgba(250, 52, 52, 1);
+  --primary-gradient: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+  --white: #fff;
+  --primary-font: "Inter";
+  --secondary-font: "Inter Bold";
+  --font-size: 1.6rem;
+  --font-size-sm: 1.4rem;
+  --font-size-xs: 1.2rem;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  font-family: var(--primary-font), Arial, Helvetica, sans-serif;
+  color: var(--gray-600);
+  font-size: var(--font-size);
+  line-height: 2.4rem;
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+a {
+  text-decoration: none
+}
+
+html {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+
+/***
+default text style
+***/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font), Arial, Helvetica, sans-serif;
+  text-shadow: 0 .4rem 1rem rgba(0, 0, 0, 25%);
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 2.8rem;
+  font-family: var(--secondary-font);
+
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+h4 {
+  font-size: 2.0rem;
+  line-height: 2.8rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}

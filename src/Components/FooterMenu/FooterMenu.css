@@ -1,0 +1,28 @@
+
+
+.footer__list-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .2rem;
+    background-color: var(--primary);
+    top: 100%;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+
+.footer__list-item:hover::after {
+    width: 5rem;
+}
+
+.footer__list-link {
+    color: var(--gray-500);
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.footer__list-item:hover .footer__list-link {
+    color: var(--dark);
+}
+
